@@ -1,0 +1,102 @@
+<template>
+    <div class="we-do">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-4">
+                    <h2>What we do? </h2>
+                    <p>Lorem ipsum dolor sit amet aenean consectetuer sociis adipiscing elit. Aenean commodo ligula eget dolor pretium quis sem. </p>
+                    <div><button> Read more <span>&#9656</span> </button></div>
+                </div>
+                <div class="col-7">
+                    
+                        <div class="row">
+                            <div class="col-6 d-flex justify-content-center align-items-center mycustom mb-5" v-for="element in wedoList">
+                            <img :src="getImagePath(element.image)" alt="">
+                            <h3>{{ element.text }}</h3>
+                            </div>
+                        </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+export default {
+    name : 'WeDo',
+
+    data() {
+        return {
+            wedoList : [
+                {
+                    text: 'Beatifull illustrations',
+                    image: '../assets/img/h2-icon-01.png',
+                },
+                {
+                    text : 'Brand stragies',
+                    image: '../assets/img/h2-icon-02.png',
+                },
+                {
+                    text : 'Qualified support',
+                    image: '../assets/img/h2-icon-03.png',
+                },
+                {
+                    text : 'Books & magazines',
+                    image: '../assets/img/h2-icon-04.png',
+                },
+            ]
+        }
+    },
+    methods:{
+       getImagePath : function (imgPath) {
+            return new URL(imgPath, import.meta.url).href;
+    },
+    },
+}
+</script>
+<style lang="scss" scoped>
+
+    div.we-do{
+        margin-top: 10rem;
+    }
+    div.container{
+        width: 90%;
+    }
+    .row>div{
+        padding : 0;
+    }
+    h2{
+        font-size: 3rem;
+    }
+
+    p{ 
+        font-family: 'Karma', serif;
+        color: #6d6e71;
+        font-size: 1.2rem;
+        
+        }
+    h3{
+        width: 50%;
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding-left: 2rem;
+    }
+
+    button{
+        text-align: center;
+        height: 50px;
+        width: 200px;
+        border: 1rem;
+        border-radius: 40px;
+        background-color: white;
+        border: 2px solid #80abae;
+        font-weight: 600;
+        
+        span{
+            font-size: 1.2rem;
+            vertical-align:top;
+        }
+    }
+   
+</style>
