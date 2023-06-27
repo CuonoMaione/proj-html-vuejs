@@ -1,28 +1,34 @@
 <template >
-    <main class="d-flex">
-        <div class="content">
-            <JumboMain/>
-            <ImageWrapper/>
+    <main>
+        <div class="d-flex">
+            <div class="content">
+                <JumboMain/>
+                <ImageWrapper/>
+                <WeDo/>
+            </div>
+            <aside class="d-flex flex-column align-items-center justify-content-start">
+                <ul class="d-flex flex-column align-content-around gap-3">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                </ul>
+            </aside>
         </div>
-        <aside class="d-flex flex-column align-items-center justify-content-start">
-            <ul class="d-flex flex-column align-content-around gap-3">
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-            </ul>
-        </aside>
     </main>
 </template>
 <script>
 import JumboMain from './JumboMain.vue'
 import ImageWrapper from './ImageWrapper.vue'
+import WeDo from './WeDo.vue';
+
 export default {
     name: 'AppMain',
     components:{
-        JumboMain,
-        ImageWrapper,
-    }
+    JumboMain,
+    ImageWrapper,
+    WeDo,
+}
 }
 </script>
 <style lang="scss" scoped>
