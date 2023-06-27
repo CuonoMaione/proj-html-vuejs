@@ -1,5 +1,5 @@
 <template>
-   <header class="d-flex justify-content-between p-5">
+   <header class="d-flex justify-content-between">
             <img src="../assets/img/logo-img-01.png" alt="" >
 
             <ul class="d-flex list-group-numbered">
@@ -26,9 +26,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+    header{
+        padding: 3rem;
+        
+    }
+
     li{
         font-weight: 600;
-        margin-left: 3.5rem;
+        margin-left: 4rem;
     }
     img{
         width: 100px;
@@ -36,7 +41,7 @@ export default {
     }
     a{
         font-size: 1.1rem;
-        font-weight: 500;
+        font-weight: 400;
         text-decoration: none;
         color: black;
     }

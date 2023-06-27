@@ -14,9 +14,10 @@ export default {
 <style lang="scss">
         .jumbotron{
         width: 100%;
-        padding: 9rem;
+        padding: 9.5rem;
         background-image: url(../assets/img/h2-background-img-02.png);
         background-size: cover;
+        background-position: center;
         
     }
     section.jumbo-text{
@@ -26,15 +27,16 @@ export default {
             font-size: 3.3rem;
             font-weight: 600;
             width: 100%
+        
             
         }
         p{
             
             font-family: 'Karma', serif;
-            color: grey;
+            color: gray;
             padding-top: 4.5rem;
             width: 100%;
-            margin-left: 2rem;
+            padding-left: 4rem;
             font-size: 1.1rem;
         }
     }

@@ -3,8 +3,13 @@
         <div class="content">
          <JumboMain/>
         </div>
-        <aside>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias officia cupiditate nulla odit aut? Rerum praesentium quo, velit officiis maiores maxime. Quam explicabo eos tempore magnam perferendis. Minima, architecto repellendus!</p>
+        <aside class="d-flex flex-column align-items-center justify-content-start">
+            <ul class="d-flex flex-column align-content-around">
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
         </aside>
     </main>
 </template>
@@ -31,11 +36,22 @@ export default {
         overflow-x: hidden;
     }
     aside{
-        width: 10%;
+        width: 7%;
         height: 90vh;
         overflow: hidden;
         position: fixed;
         right:0;
-    }
+        padding-top: 6rem;
+        li{
+            font-size: 1.25rem;
+            
 
+            a{
+            text-decoration: none;
+            color: black;
+            }
+        }
+
+        } 
+        
 </style>
