@@ -8,18 +8,18 @@
                     <div><button> Read more <span>&#9656</span> </button></div>
                 </div>
                 <div class="col-7">
-                    
                         <div class="row">
                             <div class="col-6 d-flex justify-content-center align-items-center mycustom mb-5" v-for="element in wedoList">
                             <img :src="getImagePath(element.image)" alt="">
                             <h3>{{ element.text }}</h3>
                             </div>
                         </div>
-                    
-                    
                 </div>
             </div>
         </div>
+    </div>
+    <div class="big-image d-flex justify-content-center align-items-center">
+        <span class="play-button"></span>
     </div>
 </template>
 <script>
@@ -98,5 +98,26 @@ export default {
             vertical-align:top;
         }
     }
-   
+    .big-image{
+        padding: 170px 0px;
+        height: 580px;
+        width: 100%;
+        background-image: url(https://bryson.qodeinteractive.com/wp-content/uploads/2019/06/h2-img-2.jpg);
+        background-position: center 10px;
+        background-repeat: no-repeat;
+        position: relative;
+    }
+    .play-button{
+        position: absolute;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        background-image: url(../assets/img/main-home-video-button-img-01.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        
+    }
+    .play-button:hover{
+        background-image: url(../assets/img/main-home-video-button-img-02.png);
+        }
 </style>
