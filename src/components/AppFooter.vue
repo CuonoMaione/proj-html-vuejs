@@ -1,6 +1,6 @@
 <template >
     <footer>
-        <aside></aside>
+        
         <div class="upper-section">
             <div class="container">
                 <div class="row text-section justify-content-between align-items-center">
@@ -19,23 +19,30 @@
                 </div>
                 
             </div>
+        <aside></aside>
         </div>
+        
+        <LowerSection/>
         
     </footer>
     
 </template>
 <script>
+import LowerSection from './LowerSection.vue';
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    components:{
+        LowerSection,
+    }
 }
 </script>
 <style lang="scss" scoped>
 
     aside{
         width: 7%;
-        height: 100%;
+        height: 800px;
         right:0;
-        padding-top: 6rem;
+        top:0;
         background-color: white;
         position: absolute;
         
@@ -43,7 +50,7 @@ export default {
 
     footer{
         padding-top: 8rem;
-        height: 1000px;
+        
     }
     div.container{
         width: 90%;
@@ -62,10 +69,10 @@ export default {
         
         }
 
-        .text-section{
-            
+        .upper-section{
+            position: relative;
+            margin-bottom: 10rem;
         }
-            
             
         
     .text-section>div {
@@ -109,6 +116,7 @@ export default {
         background-color: #80abae;
         transition: 0.5s ease-out;
         color: white;
+        
     }
 
     textarea:focus, input:focus{
