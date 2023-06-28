@@ -76,7 +76,7 @@ export default {
         color: white;
     }
     div.ig{
-        background-color: #69a9aa;
+        background-color: #69a9aa; 
     }
     div.fb{
         background-color: #f7d293;
@@ -86,6 +86,19 @@ export default {
     }
     div.pt{
         background-color: #d8d597;
+    }
+
+    div.ig:hover{
+        background-color: rgb(64, 134, 135);
+    }
+    div.fb:hover{
+        background-color: rgb(225, 178, 99) ;
+    }
+    div.tw:hover{
+        background-color: rgb(211, 131, 103);
+    }
+    div.pt{
+        background-color: rgb(178, 175, 110);
     }
 
     h1{
