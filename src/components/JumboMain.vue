@@ -14,10 +14,12 @@ export default {
 <style lang="scss">
         .jumbotron{
         width: 100%;
-        padding: 9.5rem;
+        padding: 9.5rem 9.5rem  9.5rem 9.5rem;
         background-image: url(../assets/img/h2-background-img-02.png);
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        
         
     }
     section.jumbo-text{

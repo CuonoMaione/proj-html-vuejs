@@ -35,6 +35,7 @@
                 
             </div>
         </div>
+        
    </div>
 </template>
 <script>
@@ -104,4 +105,19 @@ export default {
             vertical-align: top;
         }
     }
+    button:hover{
+        background-color: #80abae;
+        transition: 0.5s ease-out;
+        color: white;
+    }
+
+    aside{
+        width: 7%;
+        height: 90vh;
+        right:0;
+        padding-top: 6rem;
+        background-color: white;
+        position: absolute;
+        
+    } 
 </style>

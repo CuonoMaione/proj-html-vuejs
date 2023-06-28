@@ -98,6 +98,11 @@ export default {
             vertical-align:top;
         }
     }
+    button:hover{
+        background-color: #80abae;
+        transition: 0.5s ease-out;
+        color: white;
+    }
     .big-image{
         padding: 170px 0px;
         height: 580px;
@@ -120,4 +125,5 @@ export default {
     .play-button:hover{
         background-image: url(../assets/img/main-home-video-button-img-02.png);
         }
+    
 </style>

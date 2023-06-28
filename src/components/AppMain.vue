@@ -8,13 +8,15 @@
                 <WeDo/>
                 <TariffPlans/>
             </div>
-            <aside class="d-flex flex-column align-items-center justify-content-start">
+            <aside>
+                <nav class="d-flex flex-column align-items-center justify-content-start">
                 <ul class="d-flex flex-column align-content-around gap-3">
                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
                 </ul>
+                </nav>
             </aside>
         </div>
     </main>
@@ -38,7 +40,7 @@ export default {
 
     main{
         overflow: hidden;
-        
+        margin-top: 3rem;
         
     }
     div.content{
@@ -46,14 +48,18 @@ export default {
         height: 90hv;
         overflow-y: auto;
         overflow-x: hidden;
+        
     }
-    aside{
+    
+    nav{
         width: 7%;
         height: 90vh;
         overflow: hidden;
         position: fixed;
+        top: 20%;
         right:0;
         padding-top: 6rem;
+        
         li{
             font-size: 1.25rem;
             
@@ -61,9 +67,14 @@ export default {
             a{
             text-decoration: none;
             color: black;
+            
             }
         }
 
         } 
+
+    a:hover{
+        color: gray;
+    }
         
 </style>

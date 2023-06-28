@@ -1,5 +1,6 @@
 <template >
     <footer>
+        <aside></aside>
         <div class="upper-section">
             <div class="container">
                 <div class="row text-section justify-content-between align-items-center">
@@ -16,9 +17,12 @@
                         <div><button>Submit <span>&#9656</span></button></div>
                     </div>
                 </div>
+                
             </div>
         </div>
+        
     </footer>
+    
 </template>
 <script>
 export default {
@@ -27,8 +31,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+    aside{
+        width: 7%;
+        height: 100%;
+        right:0;
+        padding-top: 6rem;
+        background-color: white;
+        position: absolute;
+        
+    }    
+
     footer{
-        margin-top: 8rem;
+        padding-top: 8rem;
+        height: 1000px;
     }
     div.container{
         width: 90%;
@@ -46,6 +61,13 @@ export default {
         
         
         }
+
+        .text-section{
+            
+        }
+            
+            
+        
     .text-section>div {
         padding : 0;
     }
@@ -81,6 +103,16 @@ export default {
             font-size: 1.2rem;
             vertical-align:top;
         }
+    }
+
+    button:hover{
+        background-color: #80abae;
+        transition: 0.5s ease-out;
+        color: white;
+    }
+
+    textarea:focus, input:focus{
+    outline: none;
     }
 
    
