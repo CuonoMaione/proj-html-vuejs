@@ -3,8 +3,10 @@
         <div class="d-flex">
             <div class="content">
                 <JumboMain/>
+
                 <ImageWrapper/>
                 <WeDo/>
+                <TariffPlans/>
             </div>
             <aside class="d-flex flex-column align-items-center justify-content-start">
                 <ul class="d-flex flex-column align-content-around gap-3">
@@ -21,14 +23,15 @@
 import JumboMain from './JumboMain.vue'
 import ImageWrapper from './ImageWrapper.vue'
 import WeDo from './WeDo.vue';
-
+import TariffPlans from './TariffPlans.vue';
 export default {
     name: 'AppMain',
     components:{
     JumboMain,
     ImageWrapper,
     WeDo,
-}
+    TariffPlans,
+},
 }
 </script>
 <style lang="scss" scoped>
