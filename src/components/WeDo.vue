@@ -7,9 +7,9 @@
                     <p class="mb-5">Lorem ipsum dolor sit amet aenean consectetuer sociis adipiscing elit. Aenean commodo ligula eget dolor pretium quis sem. </p>
                     <div><button> Read more <span>&#9656</span> </button></div>
                 </div>
-                <div class="col-7">
+                <div class="col-8">
                         <div class="row">
-                            <div class="col-5 d-flex justify-content-center align-items-center mycustom mb-4 ms-5 p-5" v-for="element in wedoList">
+                            <div class="col-5 d-flex justify-content-center align-items-center mycustom mb-4 ms-5 p-4" v-for="element in wedoList">
                             <img :src="getImagePath(element.image)" alt="">
                             <h3>{{ element.text }}</h3>
                             </div>
@@ -115,7 +115,6 @@ export default {
     }
     .play-button{
         position: absolute;
-        z-index: 2;
         width: 100px;
         height: 100px;
         background-image: url(../assets/img/main-home-video-button-img-01.png);
